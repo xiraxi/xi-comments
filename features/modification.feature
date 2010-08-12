@@ -12,9 +12,9 @@ Feature: Comments can be deleted and modified under some conditions
 
     Scenario: Comments can be deleted during 30 minutes by its author
 
-    Scenario: After 30 minutos the author can not modify its comment
+    Scenario: After 30 minutes the author can not modify its comment
 
-    Scenario: After 30 minutos the author can not delete its comment
+    Scenario: After 30 minutes the author can not delete its comment
 
     Scenario: Other users can not modify the comment
 
