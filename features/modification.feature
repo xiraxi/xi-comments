@@ -1,7 +1,7 @@
 Feature: Comments can be deleted and modified under some conditions
     Admin users can delete any comment.
 
-    The author of the comment can edit it and delete it only 30 minutes after create it.
+    The author of the comment can edit it and delete it only during the first 30 minutes after create it.
 
     Any other user can only read it.
 
@@ -22,4 +22,4 @@ Feature: Comments can be deleted and modified under some conditions
 
     Scenario: When the user modifies a comment the content that is shown in the father's page is different
 
-    Scenario: When the user modifies a comment the content that is shown in the father's page is different
+    Scenario: When the user deletes a comment the content that is shown in the father's page is removed
