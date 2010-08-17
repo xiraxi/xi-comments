@@ -5,9 +5,9 @@ Feature: Comments can be deleted and modified under some conditions
 
     Any other user can only read it.
 
-    Scenario: Admin uses can delete any comment
+    Scenario: Admin user can delete any comment
         Given an admin session
-        And a commentable exists with this comments:
+        And a commentable exists with these comments:
             | content                      | created_at       |
             | Text for the deleted comment | 2010-01-01 01:01 |
         When I go to commentables page
@@ -19,7 +19,7 @@ Feature: Comments can be deleted and modified under some conditions
     Scenario: Comments can be modified during 30 minutes by its author
         Given a user with email: "john@example.com"
         And a session for the user "john@example.com"
-        And a commentable exists with this comments:
+        And a commentable exists with these comments:
             | content                  | created_at       | user             |
             | Original comment content | 29 minutes ago   | john@example.com |
         When I go to commentables page
@@ -33,7 +33,7 @@ Feature: Comments can be deleted and modified under some conditions
     Scenario: Comments can be deleted during 30 minutes by its author
         Given a user with email: "john@example.com"
         And a session for the user "john@example.com"
-        And a commentable exists with this comments:
+        And a commentable exists with these comments:
             | content                  | created_at       | user             |
             | Original comment content | 29 minutes ago   | john@example.com |
         When I go to commentables page
@@ -45,7 +45,7 @@ Feature: Comments can be deleted and modified under some conditions
     Scenario: After 30 minutes the author can not modify its comment
         Given a user with email: "john@example.com"
         And a session for the user "john@example.com"
-        And a commentable exists with this comments:
+        And a commentable exists with these comments:
             | content                  | created_at       | user             |
             | Original comment content | 31 minutes ago   | john@example.com |
         When I go to commentables page
@@ -56,7 +56,7 @@ Feature: Comments can be deleted and modified under some conditions
     Scenario: After 30 minutes the author can not delete its comment
         Given a user with email: "john@example.com"
         And a session for the user "john@example.com"
-        And a commentable exists with this comments:
+        And a commentable exists with these comments:
             | content                  | created_at       | user             |
             | Original comment content | 31 minutes ago   | john@example.com |
         When I go to commentables page
@@ -66,7 +66,7 @@ Feature: Comments can be deleted and modified under some conditions
 
     Scenario: Other users can not modify nor delete the comment
         Given an anonymous session
-        And a commentable exists with this comments:
+        And a commentable exists with these comments:
             | content                  | created_at       |
             | Original comment content | 10 minutes ago   |
         When I go to commentables page

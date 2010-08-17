@@ -15,7 +15,7 @@ Feature: Comments listing
             | comment item | Two     | #2       |
             | comment item | Three   | #2       |
 
-    Scenario: Show actions has a #comments link
+    Scenario: Show actions have a #comments link
         Given an anonymous session
         And a commentable exists with this comments:
             | content | created_at       |

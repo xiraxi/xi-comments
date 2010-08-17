@@ -11,7 +11,6 @@ Feature: Comment creation
         Given a regular user session
         And a commentable exists
         When I go to commentables page
-        And a commentable exists
         And I type "This is a test comment" in the "content" field of the "new comment" form
         Then the current page is a "show" action
         And the "comments" box contains "This is a test comment"
