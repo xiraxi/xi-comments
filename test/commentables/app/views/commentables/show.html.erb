@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @commentable.name %>
+</p>
+
+<%= comments_for @commentable %>
+
+<%= link_to 'Edit', edit_commentable_path(@commentable) %> |
+<%= link_to 'Back', commentables_path %>

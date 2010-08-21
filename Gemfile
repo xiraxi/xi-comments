@@ -49,4 +49,8 @@ group :development, :test do
   gem "caulfield"
 end
 
+group :test do
+  gem "commentables", :path => "test/commentables"
+end
+
 # vim: syntax=ruby

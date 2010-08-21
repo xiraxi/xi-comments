@@ -1,0 +1,23 @@
+<h1>Listing commentables</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @commentables.each do |commentable| %>
+  <tr>
+    <td><%= commentable.name %></td>
+    <td><%= link_to 'Show', commentable %></td>
+    <td><%= link_to 'Edit', edit_commentable_path(commentable) %></td>
+    <td><%= link_to 'Destroy', commentable, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Commentable', new_commentable_path %>
