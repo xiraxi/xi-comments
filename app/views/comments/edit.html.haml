@@ -1,0 +1,9 @@
+
+= form_for @comment, :html => { :class => "modify_comment" } do |form|
+  = error_messages_for @comment
+  = form.label :content
+  = form.text_area :content
+  = buttons_bar do
+    = button_ok
+    = button_cancel polymorphic_path(@comment.commentable)
+

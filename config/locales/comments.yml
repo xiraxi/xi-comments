@@ -9,3 +9,7 @@ en:
 
     show:
       author: "%{time_ago} by %{user_link}"
+
+      links:
+        edit: Edit
+        destroy: Destroy
