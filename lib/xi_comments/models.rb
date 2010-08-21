@@ -7,7 +7,7 @@ module ModelHasComments
 
   module ClassMethods
     def has_comments
-      has_many :comments, :order => 'created_at', :as => 'commentable'
+      has_many :comments, :order => 'created_at ASC', :as => 'commentable'
     end
   end
 

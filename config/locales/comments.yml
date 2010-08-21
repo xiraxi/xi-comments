@@ -8,7 +8,11 @@ en:
       success: "Your comment was added."
 
     show:
-      author: "%{time_ago} by %{user_link}"
+      metadata: "Created %{time_ago} ago by %{user_link}"
+      title:
+        zero: "No comments"
+        one: "One comment"
+        other: "%{count} comments"
 
       links:
         edit: Edit

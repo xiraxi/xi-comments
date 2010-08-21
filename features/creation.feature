@@ -5,7 +5,7 @@ Feature: Comment creation
     And a commentable exists
     When I go to the commentables page
     And I click on "Show"
-    Then the "comments" box contains "You have to be logged to comment."
+    Then the "login error" box contains "You have to be logged to comment."
 
   Scenario: When the user creates a content then he is redirected to the content show action
     Given a regular user session
@@ -15,7 +15,7 @@ Feature: Comment creation
     And I fill in "Content" with "This is a test comment" within "new comment"
     And I submit the form "new comment"
     Then the current page is a "show" action
-    And the "comments" box contains "This is a test comment"
+    And the "comments box" box contains "This is a test comment"
     And the flash box contains "Your comment was added."
 
   Scenario: Comment's content can not be empty

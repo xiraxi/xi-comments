@@ -1,10 +1,10 @@
 
-.comment-item
+.comment_item
 
-  .user-photo
+  .user_photo
     = user_photo comment.user
   .metadata
-    = raw t("comments.show.author", :time_ago => distance_of_time_in_words(Time.now, comment.created_at), :user_link => link_to_profile(comment.user))
+    = raw t("comments.show.metadata", :time_ago => distance_of_time_in_words(Time.now, comment.created_at), :user_link => link_to_profile(comment.user))
   .text
     = simple_format h(comment.content)
 
