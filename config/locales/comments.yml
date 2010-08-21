@@ -1,0 +1,11 @@
+
+en:
+  comments:
+    creation:
+      required_user: "You have to be logged to comment."
+
+      invalid: "Your comment could not be added: %{messages}"
+      success: "Your comment was added."
+
+    show:
+      author: "%{time_ago} by %{user_link}"

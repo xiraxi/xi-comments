@@ -1,0 +1,6 @@
+= form_for Comment.new, :html => { :class => "new_comment" } do |form|
+  = hidden_field_tag "commentable", XiraxiCore::Security.encrypt({:class => commentable.class.name, :id => commentable.id})
+  = form.label :content
+  = form.text_area :content
+  = button_ok
+

@@ -1,0 +1,18 @@
+
+.comment
+
+  .user-photo
+    = user_photo comment.user
+  .metadata
+    = raw t("comments.show.author", :time_ago => distance_of_time_in_words(Time.now, comment.created_at), :user_link => link_to_profile(comment.user))
+  .text
+    = simple_format h(comment.content)
+
+  %div.buttons
+    %a.button{:href => "edit_comment"}
+      Editar
+    %a.button{:href => "delete_comment"}
+      Borrar
+  %div.report-spam
+    %a{:href => "report_spam"}
+      Denunciar spam
