@@ -2,6 +2,8 @@ module CommentsHelper
 
   def comments_for(commentable, options = {})
     content_tag :div, :class => "comments_box" do
+      concat content_tag(:h2, t("comments.show.header"))
+
       all_comments = commentable.comments
       concat %[<div class="comment-count"><a href="#comments" name="comments">#{t "comments.show.title", :count => all_comments.size}</a></div>\n].html_safe
       concat render(:partial => "comments/comment", :collection => all_comments)
