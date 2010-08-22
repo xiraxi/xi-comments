@@ -1,0 +1,28 @@
+.comments {
+  @include item;
+  @include button;
+  border-bottom: none;
+
+  a.button, div.comment_count {
+    display: inline-block;
+  }
+  a.button {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .comment {
+    margin-top: 1.5em;
+    overflow: auto;
+    padding-top: 0.5em;
+    @include comment-border;
+
+    .metadata {
+       margin-bottom: 0;
+    }
+    .buttons {
+      margin-top: 0;
+    }
+  }
+}
+
+
