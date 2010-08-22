@@ -1,0 +1,22 @@
+
+es:
+  comments:
+    creation:
+      required_user: "Para comentar debes estar identificado."
+
+      invalid: "Tu comentario no se pudo añadir: %{messages}"
+      success: "Tu comentario se añadió correctamente."
+
+    show:
+      metadata: "Creado hace %{time_ago} por %{user_link}"
+      header: Comentarios
+      title:
+        zero: "No hay comentarios"
+        one: "Un comentario"
+        other: "%{count} comentarios"
+
+      links:
+        edit: Editar
+        destroy: Eliminar
+
+
