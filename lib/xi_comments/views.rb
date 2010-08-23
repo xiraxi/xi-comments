@@ -1,7 +1,7 @@
 module CommentsHelper
 
   def comments_for(commentable, options = {})
-    content_tag :div, :class => "comments_box" do
+    content_tag :div, :class => "comments" do
       concat content_tag(:h2, t("comments.show.header"))
 
       all_comments = commentable.comments
