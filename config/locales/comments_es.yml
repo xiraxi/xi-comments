@@ -1,6 +1,7 @@
 
 es:
   comments:
+    new_comment: Nuevo comentario
     creation:
       required_user: "Para comentar debes estar identificado."
 
