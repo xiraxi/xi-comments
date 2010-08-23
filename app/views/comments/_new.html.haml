@@ -3,8 +3,10 @@
   
   %fieldset
     %legend
-      = t "comments.new_comment"
+      = t "comments.creation.legend"
+
     %ul
       %li
+        = form.hidden_label :content
         = form.text_area :content
     = button_ok

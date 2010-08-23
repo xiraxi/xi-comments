@@ -1,12 +1,13 @@
 
 es:
   comments:
-    new_comment: Nuevo comentario
     creation:
       required_user: "Para comentar debes estar identificado."
 
       invalid: "Tu comentario no se pudo añadir: %{messages}"
       success: "Tu comentario se añadió correctamente."
+
+      legend: Nuevo comentario
 
     show:
       metadata: "Creado hace %{time_ago} por %{user_link}"

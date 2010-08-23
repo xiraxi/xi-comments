@@ -7,10 +7,11 @@ en:
       invalid: "Your comment could not be added: %{messages}"
       success: "Your comment was added."
 
+      legend: New comment
+
     show:
       metadata: "Created %{time_ago} ago by %{user_link}"
       header: Comments
-      headers: Comments
       title:
         zero: "No comments"
         one: "One comment"
@@ -20,3 +21,7 @@ en:
         edit: Edit
         destroy: Destroy
 
+  activerecord:
+    attributes:
+      comment:
+        content: Content
