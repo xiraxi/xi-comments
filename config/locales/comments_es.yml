@@ -12,12 +12,13 @@ es:
     show:
       metadata: "Creado hace %{time_ago} por %{user_link}"
       header: Comentarios
-      title:
+      count:
         zero: "No hay comentarios"
         one: "Un comentario"
         other: "%{count} comentarios"
 
       links:
+        new: Añadir comentario
         edit: Editar
         destroy: Eliminar
 
