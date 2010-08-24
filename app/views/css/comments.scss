@@ -1,6 +1,5 @@
 .comments {
   @include item;
-  @include button;
   border-bottom: none;
 
   a.button, div.comment_count {
