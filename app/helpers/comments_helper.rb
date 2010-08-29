@@ -19,7 +19,3 @@ module CommentsHelper
   end
 
 end
-
-ActionView::Base.class_eval do
-  include CommentsHelper
-end
