@@ -14,7 +14,7 @@ Feature: Comments can be deleted and modified under some conditions
       | Text for the deleted comment | 50 minutes ago | user: "john" | commentable: "first" |
     When I go to the commentables page
     And I click on "Show"
-    And I click on "Destroy" within "comment item"
+    And I click on "Destroy" within "edit comment"
     Then the current page is a "show" action
     And the page does not contain "Text for the deleted comment"
 
